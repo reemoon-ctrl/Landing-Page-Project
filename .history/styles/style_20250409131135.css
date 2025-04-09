@@ -448,15 +448,13 @@ body{
 
 /* blog post media query */
 @media (min-width:500px) and (max-width:850px) {
-     .container{
+    #section3 .container{
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
     }}
-
-    
 @media (max-width:500px) {
-     .container{
+    #section3 .container,#section4 .container{
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
