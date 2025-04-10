@@ -84,7 +84,7 @@ body{
 #section2{
     margin: 10rem 0;
 }
-#section2 .section2h1,#section3 .section2h1,#section4 .section2h1, .sectionh{
+#section2 .section2h1,#section3 .section2h1,#section4 .section2h1, section{
     margin: auto;
     text-align: center;
     color: #ffffff;
@@ -94,7 +94,7 @@ body{
     text-align: center;
     color: #ffffff;
 }
-#section3 .section2p,#section4 .section2p,.sectionp{
+#section3 .section2p,#section4 .section2p{
     padding: 0 0 3rem 0;
     
 }
