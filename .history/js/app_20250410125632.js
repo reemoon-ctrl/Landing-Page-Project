@@ -83,14 +83,14 @@ function makeActive() {
 document.addEventListener('scroll', makeActive);
 
 
-// let scrollTimeout;
-// document.addEventListener('scroll', () => {
-//   const navBar = document.querySelector('.main-header');
-//   navBar.style.opacity = 1;
+let scrollTimeout;
+document.addEventListener('scroll', () => {
+  const navBar = document.querySelector('.main-header');
+  navBar.style.opacity = 1;
 
-//   clearTimeout(scrollTimeout);
+  clearTimeout(scrollTimeout);
 
-// });
+});
 
 // Scroll-to-top button
 const scrollToTopButton = document.createElement('button');

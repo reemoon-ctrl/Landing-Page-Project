@@ -39,19 +39,7 @@ const allNavLinks = Array.from(document.querySelectorAll('.nav-link a'));
 allNavLinks.forEach(link => link.addEventListener('click', smoothScroll));
 
 //fixing the nav bar on scroll
-window.addEventListener("scroll", fixnavpar);
-function fixnavpar() {
-  const header = document.querySelector(".main-header");
-  const navBarFixedPosition = header.offsetTop;
-
-  if (pageYOffset >= navBarFixedPosition) {
-    header.classList.add("fixed");
-  }
-  else { 
-    header.classList.remove("fixed");
-
-  }
-}
+functuion faixna
 
 // Function to smooth scrolling of nav item
 function smoothScroll(event) {
@@ -83,14 +71,14 @@ function makeActive() {
 document.addEventListener('scroll', makeActive);
 
 
-// let scrollTimeout;
-// document.addEventListener('scroll', () => {
-//   const navBar = document.querySelector('.main-header');
-//   navBar.style.opacity = 1;
+let scrollTimeout;
+document.addEventListener('scroll', () => {
+  const navBar = document.querySelector('.main-header');
+  navBar.style.opacity = 1;
 
-//   clearTimeout(scrollTimeout);
+  clearTimeout(scrollTimeout);
 
-// });
+});
 
 // Scroll-to-top button
 const scrollToTopButton = document.createElement('button');

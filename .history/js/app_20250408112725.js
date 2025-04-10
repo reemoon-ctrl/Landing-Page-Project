@@ -38,21 +38,6 @@ sections.forEach(section => {
 const allNavLinks = Array.from(document.querySelectorAll('.nav-link a'));
 allNavLinks.forEach(link => link.addEventListener('click', smoothScroll));
 
-//fixing the nav bar on scroll
-window.addEventListener("scroll", fixnavpar);
-function fixnavpar() {
-  const header = document.querySelector(".main-header");
-  const navBarFixedPosition = header.offsetTop;
-
-  if (pageYOffset >= navBarFixedPosition) {
-    header.classList.add("fixed");
-  }
-  else { 
-    header.classList.remove("fixed");
-
-  }
-}
-
 // Function to smooth scrolling of nav item
 function smoothScroll(event) {
   event.preventDefault();
@@ -64,10 +49,10 @@ function smoothScroll(event) {
 // Function to highlight active section and nav item
 function makeActive() {
   const scrollPosition = window.pageYOffset;
-  const navLinks = document.querySelectorAll('.nav-link li a');
+
   sections.forEach((section, index) => {
     const box = section.getBoundingClientRect();
-    
+    const navLinks = document.querySelectorAll('.nav-link li a');
 
     if (box.top <= 150 && box.bottom >= 150) {
       section.classList.add('active');
@@ -83,14 +68,14 @@ function makeActive() {
 document.addEventListener('scroll', makeActive);
 
 
-// let scrollTimeout;
-// document.addEventListener('scroll', () => {
-//   const navBar = document.querySelector('.main-header');
-//   navBar.style.opacity = 1;
+let scrollTimeout;
+document.addEventListener('scroll', () => {
+  const navBar = document.querySelector('.main-header');
+  navBar.style.opacity = 1;
 
-//   clearTimeout(scrollTimeout);
+  clearTimeout(scrollTimeout);
 
-// });
+});
 
 // Scroll-to-top button
 const scrollToTopButton = document.createElement('button');

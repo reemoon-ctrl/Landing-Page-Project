@@ -123,11 +123,9 @@ body{
 
 }
 
-.main-sub {
-    padding-top: 62px;
+#section1 {
+    scroll-margin-top: 80px; /* Adjust this value to match your header's height */
 } 
-
-
 .blog-card{
     background-color: #ffffff;
     display: flex;

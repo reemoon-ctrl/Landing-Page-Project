@@ -11,19 +11,17 @@
     padding: 20px 2rem;
     font-size: 1.2rem;
     color: white;
-    transition: all .3s ease ;
+    
+    width: 100%;
     background-color: #17354F;
     z-index: 1000;
 
 }
-.fixed{
+.main-header.fixed{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-
-
-
+    
 }
 
 .nav-link{
@@ -122,12 +120,6 @@ body{
     
 
 }
-
-.main-sub {
-    padding-top: 62px;
-} 
-
-
 .blog-card{
     background-color: #ffffff;
     display: flex;

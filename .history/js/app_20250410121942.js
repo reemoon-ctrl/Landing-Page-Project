@@ -44,7 +44,7 @@ function fixnavpar() {
   const header = document.querySelector(".main-header");
   const navBarFixedPosition = header.offsetTop;
 
-  if (pageYOffset >= navBarFixedPosition) {
+  if (pageYOffset > navBarFixedPosition) {
     header.classList.add("fixed");
   }
   else { 
@@ -83,14 +83,14 @@ function makeActive() {
 document.addEventListener('scroll', makeActive);
 
 
-// let scrollTimeout;
-// document.addEventListener('scroll', () => {
-//   const navBar = document.querySelector('.main-header');
-//   navBar.style.opacity = 1;
+let scrollTimeout;
+document.addEventListener('scroll', () => {
+  const navBar = document.querySelector('.main-header');
+  navBar.style.opacity = 1;
 
-//   clearTimeout(scrollTimeout);
+  clearTimeout(scrollTimeout);
 
-// });
+});
 
 // Scroll-to-top button
 const scrollToTopButton = document.createElement('button');

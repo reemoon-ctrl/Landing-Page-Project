@@ -11,21 +11,8 @@
     padding: 20px 2rem;
     font-size: 1.2rem;
     color: white;
-    transition: all .3s ease ;
-    background-color: #17354F;
-    z-index: 1000;
 
 }
-.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-
-
-}
-
 .nav-link{
     display: flex;
     flex-direction: row;
@@ -122,12 +109,6 @@ body{
     
 
 }
-
-.main-sub {
-    padding-top: 62px;
-} 
-
-
 .blog-card{
     background-color: #ffffff;
     display: flex;
@@ -563,7 +544,7 @@ body{
 }
 
 .nav-link .active-link {
-    background-color: #e6b04a; 
+    background-color: #17354F; 
     color: #333;
 }
 

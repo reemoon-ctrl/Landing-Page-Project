@@ -123,8 +123,8 @@ body{
 
 }
 
-.main-sub {
-    padding-top: 62px;
+#section1 {
+    scroll-margin-top: 6px;
 } 
 
 
